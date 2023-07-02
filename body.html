@@ -1,0 +1,408 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarin's Cosmetics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Style.css">
+    <script type="module" src="./Java.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    .backgroundimgbody {
+        height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./Images/Body-products/bodypagebgi.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* background-attachment: fixed; */
+    }
+</style>
+<body>
+    <!-- NavBar Section -->
+    <nav>
+   
+      <div class="image"><a href="./Index.html"><img src="./Images/Logo.png " alt="" height="70" width="200"></a>
+          <ul>
+              <li><a class="Anim" href="./Body.html">Body</a></li>
+              <li><a class="Anim" href="./Perfume.html">Perfume's</a></li>
+              <li><a class="Anim" href="./Hair.html">HairCare</a></li>
+              <li><a class="Anim" href="./Sunscreen.html">Sunscreen</a></li>
+              <li><a class="Anim" href="./Makeup.html">Makeup</a></li>
+              <li><a class="Anim" href="./Face.html">Face</a></li>
+              <form action="/action_page.php"></form>
+              <input class="search" type="text" placeholder="Search.." name="search">
+              <button class="butt" type="submit">
+                  
+                      <img src="./Images/search_icon_125165.png" alt="" height="30px" width="30px">
+                  </i>
+              </button>
+              <li class="Sign"><a class="Login" href="./LOGIN.HTML">Login</a></li>
+              <li class="Sign"><a class="Login" href="./signup.html" target="_top">Sign Up</a></li>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="https://cdn-icons-png.flaticon.com/512/2311/2311531.png" alt="" height="40" width="">
+              </a>
+          </ul>
+      </div>
+  </nav>
+  <!-- NavBar Section End -->
+  <!-- Slider Start -->
+  <section class="sliderimg">
+    <div class="slider">
+      <img src="./Images/Body-products/sliders2.jpg" alt="Image 1" class="slide active">
+      <img src="./Images/Body-products/slider1.jpg" alt="Image 2" class="slide">
+      <img src="./Images/Body-products/slider3.jpg" alt="Image 3" class="slide">
+      <img src="./Images/Body-products/slider4.jpg" alt="Image 3" class="slide">
+
+  </div>
+  <script src="Slider.js">
+  </script>  
+  </section>
+<!-- Slider End -->
+  <!-- Background Image Html -->
+  <div class="backgroundimgbody">
+    <!-- Background img Html End -->
+<!-- Body Product Secction Start -->
+<section>
+    <div class="divider">Body Products</div>
+    <div class="card-container">
+      <!-- Card 1  -->
+ <div class="card">
+  <img src="./Images/Body-products/Product-1.png" alt="Product 1" >
+  <h3>Vaseline Lotion Intensive Skin Care</h3>
+  <p>$25.00</p>
+  <button class="view-more1body" id="btncard">View More </button>
+</div>
+<!-- Card 1 Ended  -->
+<!-- Product Discription Overlay Start -->
+<div class="modal" id="modal1body">
+  <div class="modal-content">
+    <span id="close" class="close1body">&times;</span>
+    <img src="./Images/Body-products/Product-1.png" alt="Product Image">
+    <h3>Vaseline Lotion Intensive Skin Care</h3>
+    <p><b>Discription </b> It is made with micro-droplets of trusted Vaseline jelly to help repair dry skin in just three weeks. <br>
+      The Skin is left feeling supple and deeply moisturised.
+</p>
+    <h5>Product Price: $25.00</h5>
+    <div class="cardbutton">
+    <button id="btncard">Add to Cart</button>
+  </div>
+  </div>
+</div>
+<!-- Product Discription Overlay End -->  
+      <!-- Card 2  -->
+ <div class="card">
+  <img src="./Images/Body-products/Product-2.jpg" alt="Product 1" >
+  <h3> The Body Shop Vitamin C </h3>
+  <p >$20.00</p>
+  <button class="view-more2body" id="btncard">View More </button>
+</div>
+<!-- Card 2 Ended  -->
+<!-- Product Discription Overlay Start -->
+<div class="modal" id="modal2body">
+  <div class="modal-content">
+    <span id="close" class="close2body">&times;</span>
+    <img src="./Images/Body-products/Product-2.jpg" alt="Product Image">
+    <h3>The Body Shop Vitamin C </h3>
+    <p><b>Discription </b> Made with Amazonian camu camu berry and aloe vera, our Vitamin C energising face mist revives dull, grumpy, and tired skin by adding some zest into your skincare routine. </p>
+    <h5>Product Price: $20.00</h5>
+    <div class="cardbutton">
+    <button id="btncard">Add to Cart</button>
+  </div>
+  </div>
+</div>
+<!-- Product Discription Overlay End -->  
+     <!-- Card 3  -->
+ <div class="card">
+  <img src="./Images/Body-products/product-3.jpg" alt="Product 1" >
+  <h3>Victoria Secret Coconut Passion Body</h3>
+  <p>$34.00</p>
+  <button class="view-more3body" id="btncard">View More </button>
+</div>
+<!-- Card 3 Ended  -->
+<!-- Product Discription Overlay Start -->
+<div class="modal" id="modal3body">
+  <div class="modal-content">
+    <span id="close" class="close3body">&times;</span>
+    <img src="./Images/Body-products/product-3.jpg" alt="Product Image">
+    <h3> Victoria Secret Coconut Passion Body</h3>
+    <p><b>Discription </b> Coconut Passion is a sensual blend of vanilla, coconut and lily-of-the-valley. It belongs to the Secret Garden collection.</p>
+    <h5>Product Price: $34.00</h5>
+    <div class="cardbutton">
+    <button id="btncard">Add to Cart</button>
+  </div>
+  </div>
+</div>
+<!-- Product Discription Overlay End -->  
+     <!-- Card 4  -->
+ <div class="card">
+  <img src="./Images/Body-products/Product-4.jpg" alt="Product 1" >
+  <h3>SFX FACE AND BODY PAINT PALETTE</h3>
+  <p >$24.00</p>
+  <button class="view-more4body" id="btncard">View More </button>
+</div>
+<!-- Card 4 Ended  -->
+<!-- Product Discription Overlay Start -->
+<div class="modal" id="modal4body">
+  <div class="modal-content">
+    <span id="close" class="close4body">&times;</span>
+    <img src="./Images/Body-products/Product-4.jpg" alt="Product Image">
+    <h3>SFX FACE AND BODY PAINT PALETTE</h3>
+    <p><b>Discription </b> Pros know that special effects artistry is all about paint payoff, and NYX Professional Makeup SFX Face & Body Paint is seriously packing pigment! These six blendable, buildable creams set to a dry long-wearing finish and include key Primary, Brights and Metallic shades to create every color imaginable. </p>
+    <h5>Product Price: $24.00</h5>
+    <div class="cardbutton">
+    <button id="btncard">Add to Cart</button>
+  </div>
+  </div>
+</div>
+<!-- Product Discription Overlay End -->  
+</div>
+</section>
+<!-- Second row start -->
+<section>
+ 
+    <div class="card-container">
+     <!-- Card 5  -->
+ <div class="card">
+    <img src="./Images/Body-products/product5.jpg" alt="Product 1" >
+    <h3>Victoria Secret Citrus Chill Body</h3>
+    <p>$21.00</p>
+    <button class="view-morebody5" id="btncard">View More </button>
+  </div>
+  <!-- Card 5 Ended  -->
+  <!-- Product Discription Overlay Start -->
+  <div class="modal" id="modalbody5">
+    <div class="modal-content">
+      <span id="close" class="closebody5">&times;</span>
+      <img src="./Images/Body-products/product5.jpg" alt="Product Image">
+      <h3>Victoria Secret Citrus Chill Body</h3>
+      <p><b>Discription </b> Victoria's Secret Citrus Chill is a floral citrus fragrance mist with a bright, energizing scent. Part of the Victoria's Secret Limited Edition Summer Spritzer Collection, this deceptively simple scent profile vaporizes fragrance combines sparkling tangelo and almond blossoms. </p>
+      <h5>Product Price: $21.00</h5>
+      <div class="cardbutton">
+      <button id="btncard">Add to Cart</button>
+    </div>
+    </div>
+  </div>
+  <!-- Product Discription Overlay End --> 
+
+      <!-- Card 6  -->
+ <div class="card">
+  <img src="./Images/Body-products/product-6.jpg" alt="Product 1" >
+  <h3> Bath & Body Works Japanese Cherry </h3>
+  <p >$26.00</p>
+  <button class="view-more6body" id="btncard">View More </button>
+</div>
+<!-- Card 6 Ended  -->
+<!-- Product Discription Overlay Start -->
+<div class="modal" id="modal6body">
+  <div class="modal-content">
+    <span id="close" class="close6body">&times;</span>
+    <img src="./Images/Body-products/product-6.jpg" alt="Product Image">
+    <h3>Bath & Body Works Japanese Cherry Blossom</h3>
+    <p><b>Discription </b> Treat yourself to Japanese Cherry Blossom Fine Fragrance Mist at Bath And Body Works - the perfect, nourishing, refreshing scent your skin will love. </p>
+    <h5>Product Price: $26.00</h5>
+    <div class="cardbutton">
+    <button id="btncard">Add to Cart</button>
+  </div>
+  </div>
+</div>
+<!-- Product Discription Overlay End -->  
+     <!-- Card 7  -->
+ <div class="card">
+  <img src="./Images/Body-products/product-7.jpg" alt="Product 1" >
+  <h3>Bath And Body Works Dark Kiss Body</h3>
+  <p>$28.00</p>
+  <button class="view-more7body" id="btncard">View More </button>
+</div>
+<!-- Card 7 Ended  -->
+<!-- Product Discription Overlay Start -->
+<div class="modal" id="modal7body">
+  <div class="modal-content">
+    <span id="close" class="close7body">&times;</span>
+    <img src="./Images/Body-products/product-7.jpg" alt="Product Image">
+    <h3>Bath And Body Works Dark Kiss Body</h3>
+    <p><b>Discription </b> Treat yourself to Dark Kiss Daily Nourishing Body Lotion at Bath And Body Works - the perfect, nourishing, refreshing scent your skin will love..</p>
+    <h5>Product Price: $28.00</h5>
+    <div class="cardbutton">
+    <button id="btncard">Add to Cart</button>
+  </div>
+  </div>
+</div>
+<!-- Product Discription Overlay End -->  
+     <!-- Card 8  -->
+ <div class="card">
+  <img src="./Images/Body-products/product-8.jpg" alt="Product 1" >
+  <h3>The Body Shop Shea Body Butter</h3>
+  <p >$18.00</p>
+  <button class="view-more8body" id="btncard">View More </button>
+</div>
+<!-- Card 8 Ended  -->
+<!-- Product Discription Overlay Start -->
+<div class="modal" id="modal8body">
+  <div class="modal-content">
+    <span id="close" class="close8body">&times;</span>
+    <img src="./Images/Body-products/product-8.jpg" alt="Product Image">
+    <h3>The Body Shop Shea Body Butter</h3>
+    <p><b>Discription </b> Cosmetics are constituted mixtures of chemical compounds derived from either natural sources or synthetically created ones. Cosmetics have various purposes. Those designed for personal care and skincare can be used to cleanser or protect the body or skin. </p>
+    <h5>Product Price: $18.00</h5>
+    <div class="cardbutton">
+    <button id="btncard">Add to Cart</button>
+  </div>
+  </div>
+</div>
+<!-- Product Discription Overlay End -->  
+</div>
+</section>
+<!-- Second Row End -->
+
+<!-- Third Row Start -->
+<section>
+ 
+    <div class="card-container">
+      <!-- Card 9  -->
+ <div class="card">
+  <img src="./Images/Body-products/product-9.jpg" alt="Product 1" >
+  <h3> Body Shop Seaweed Pore Cleansing</h3>
+  <p>$14.00</p>
+  <button class="view-more9body" id="btncard">View More </button>
+</div>
+<!-- Card 9 Ended  -->
+<!-- Product Discription Overlay Start -->
+<div class="modal" id="modal9body">
+  <div class="modal-content">
+    <span id="close" class="close9body">&times;</span>
+    <img src="./Images/Body-products/product-9.jpg" alt="Product Image">
+    <h3>Body Shop Seaweed Pore Cleansing</h3>
+    <p><b>Discription </b> Skincare is that the variety of practices that support skin integrity, enhance its look, and relieve skin conditions. they will embody nutrition, shunning of excessive sun exposure, and acceptable use of emollients. </p>
+    <h5>Product Price: $14.00</h5>
+    <div class="cardbutton">
+    <button id="btncard">Add to Cart</button>
+  </div>
+  </div>
+</div>
+<!-- Product Discription Overlay End -->  
+      <!-- Card 10  -->
+ <div class="card">
+  <img src="./Images/Body-products/product-10.jpg" alt="Product 1" >
+  <h3> Body Shop Seaweed Oil-Control-Lotion </h3>
+  <p >$25.00</p>
+  <button class="view-more10body" id="btncard">View More </button>
+</div>
+<!-- Card 10 Ended  -->
+<!-- Product Discription Overlay Start -->
+<div class="modal" id="modal10body">
+  <div class="modal-content">
+    <span id="close" class="close10body">&times;</span>
+    <img src="./Images/Body-products/product-10.jpg" alt="Product Image">
+    <h3>Body Shop Seaweed Oil-Control-Lotion </h3>
+    <p><b>Discription </b> Introducing our Seaweed Oil-Control Lotion SPF 15 - a gel cream that helps to balance excess oil, leaving your skin looking more mattified and shine-free. Infused with seaweed from Ireland and with an extra hit of SPF 15 lotion, this lightweight cream makes for a wonderful friend to combination skin types. </p>
+    <h5>Product Price: $25.00</h5>
+    <div class="cardbutton">
+    <button id="btncard">Add to Cart</button>
+  </div>
+  </div>
+</div>
+<!-- Product Discription Overlay End -->  
+     <!-- Card 11  -->
+ <div class="card">
+  <img src="./Images/Body-products/product-11.jpg" alt="Product 1" >
+  <h3>Victoria Secret Pink Warm & Cozy </h3>
+  <p>$15.00</p>
+  <button class="view-more11body" id="btncard">View More </button>
+</div>
+<!-- Card 11 Ended  -->
+<!-- Product Discription Overlay Start -->
+<div class="modal" id="modal11body">
+  <div class="modal-content">
+    <span id="close" class="close11body">&times;</span>
+    <img src="./Images/Body-products/product-11.jpg" alt="Product Image">
+    <h3> Victoria Secret Pink Warm & Cozy Sun Daze Body Mist </h3>
+    <p><b>Discription </b> The sensations are fresh, the flowers are hot, and the golden hours go on forever. Refreshing mist with essential oils for an empowering, never overpowering scent. It smells of Picking berries, flowers of the sun, and good vibes.</p>
+    <h5>Product Price: $15.00</h5>
+    <div class="cardbutton">
+    <button id="btncard">Add to Cart</button>
+  </div>
+  </div>
+</div>
+<!-- Product Discription Overlay End -->  
+     <!-- Card 12  -->
+ <div class="card">
+  <img src="./Images/Body-products/produt-12.jpg" alt="Product 1" >
+  <h3>Victoria Secret Pink Sweet Queeze</h3>
+  <p >$10.00</p>
+  <button class="view-more12body" id="btncard">View More </button>
+</div>
+<!-- Card 12 Ended  -->
+<!-- Product Discription Overlay Start -->
+<div class="modal" id="modal12body">
+  <div class="modal-content">
+    <span id="close" class="close12body">&times;</span>
+    <img src="./Images/Body-products/produt-12.jpg" alt="Product Image">
+    <h3>Victoria Secret Pink Sweet Queeze Body Mist</h3>
+    <p><b>Discription </b>A trio of sunny aromas brimming with fresh fruit and summery vibes. Infused with essential oils for a scent that empowers, never overpowers. Sweet Squeeze fragrance style with notes of juicy Clementine, water lily, and dandelion petals. </p>
+    <h5>Product Price: $10.00</h5>
+    <div class="cardbutton">
+    <button id="btncard">Add to Cart</button>
+  </div>
+  </div>
+</div>
+<!-- Product Discription Overlay End -->  
+</div>
+</section>
+<!-- Third Rown End -->
+<script src="./body.js">
+    
+</script>
+<!-- Card Section End -->
+<!-- Footer start -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>123, Main Street, Your City, Country</p>
+            <p>Email: info@example.com</p>
+            <p>Phone: +1 234 567 8901</p>
+        </div>
+        <div class="footer-section">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="./AboutUs.html">About Us</a></li>
+                <li><a href="./FAQs.html">FAQs</a></li>
+                <li><a href="./ContactUS.html">Contact Us</a></li>
+                <li><a href="./Terms  Conditions.html">Terms & Conditions</a></li>
+                <li><a href="./Privacy Policy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="followus8/*">Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="#"><h5 class="socailmedia">Facebook</h5><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><h5 class="socailmedia">Instagram</h5><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><h5 class="socailmedia">Twitter</h5><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Feedback</h3>
+            <form class="feedback-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Comment" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div >
+      <h4 class="powered">Copyright © 2023 - Powered by Clarin's Costmetics</h4>
+   </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Footer END -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+  </html>

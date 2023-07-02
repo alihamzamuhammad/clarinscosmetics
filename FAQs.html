@@ -1,0 +1,349 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Clarin's Cosmetics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Style.css">
+    <script type="module" src="./Java.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <style>
+       body {
+           background-color: rgb(251, 235, 245);
+       }
+       
+       .link-ed {
+    padding-left: 5%;
+    
+}
+.alinked a{
+    color: #f44336;
+}
+        /* FAQs Heading */
+        .faqhead {
+            padding-top: 10%;
+        }
+        .faqheading {
+            padding-left: 10%;
+            padding-top: 2%;
+            
+        }
+        .faqheading a {
+            text-decoration: none;
+            color: black;
+        }
+        .faqheading a:hover {
+            color: #fd0f8e;
+        }
+        /* FAQs Heading */
+        .faqs-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+           
+        }
+
+        .faq {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-header {
+            background-color: #969696;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 15px;
+            position: relative;
+            user-select: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-header:hover {
+            background-color: #ed1af4;
+        }
+
+        .faq-content {
+            padding: 0 15px;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-content p {
+            padding: 15px 0;
+            margin: 0;
+        }
+
+        .faq.active .faq-content {
+            max-height: 200px;
+        }
+    /* Contact Support Button */
+    .buttonfaq {
+    padding-left: 40rem;
+    padding-bottom: 2%;
+
+    }
+    .hero{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero:hover{
+    border: 1px solid #000000;
+    background: #e90e0e;
+    transition: 1s;
+}
+.red-btn{
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+}
+.red-btn:hover{
+    color: white;
+}
+    /* Responsive styles */
+@media (max-width: 767px) {
+    .faqhead {
+        padding-top: 5%;
+    }
+    .faqheading {
+        padding-left: 5%;
+        padding-top: 1%;
+    }
+    .buttonfaq {
+        padding-left: 0;
+        text-align: center;
+    }
+    nav ul {
+        display: none;
+    }
+    .icon {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .icon {
+        display: none;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+          <div class="image"><a href="./Index.html"><img src="./Images/Logo.png " alt="" height="90" width="200"></a>
+              <ul>
+                  <li><a class="Anim" href="./Body.html">Body</a></li>
+                  <li><a class="Anim" href="./Perfume.html">Perfume's</a></li>
+                  <li><a class="Anim" href="./Hair.html">HairCare</a></li>
+                  <li><a class="Anim" href="./Sunscreen.html">Sunscreen</a></li>
+                  <li><a class="Anim" href="./Makeup.html">Makeup</a></li>
+                  <li><a class="Anim" href="./Face.html">Face</a></li>
+                      <form action="/action_page.php"></form>
+                          <input class="search" type="text" placeholder="Search.." name="search">
+                              <button class="butt" type="submit">
+                                 
+                                      <img src="./Images/search_icon_125165.png" alt="" height="30px" width="30px">
+                                  </i>
+                              </button>
+                  <li class="Sign"><a class="Login" href="./LOGIN.HTML">Login</a></li>
+                  <li class="Sign"><a class="Login" href="./signup.html" target="_top">Sign Up</a></li>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2311/2311531.png" alt="" height="40" width="">
+                  </a>
+              </ul>
+          </div>
+      </nav>
+    <!-- FAQQs Heading  -->
+   
+    <div class="faqhead">
+        <div class="link-ed">
+            <p class="alinked"><a href="./Index.html">Home</a><i class="fa-solid fa-angle-right" style="padding-left: 5px;"></i>
+            <a href="./FAQs.html">FAQs</a></p>
+        </div>
+        <div class="faqheading">
+        <h3>FAQs</h3>
+        <p>Below FAQ are some common concerns of our clients before purchasing. <br>
+            If you have other questions, please <a href="*"> Contact Us</a></p>
+    </div>
+</div>
+    <div class="faqs-container">
+        <div class="needhelp">
+            <h4 style="padding-bottom: 2%;">Need Help?</h4>
+        </div>
+        <div class="faq">
+            <div class="faq-header" onclick="toggleFaq(0)">
+                Q: “How do I place an order?”
+            </div>
+            <div class="faq-content">
+                <p>You can place an order on our website at clarinscosmatics.com. Or we can place an order for you if you call us at 0300-1234567. You can also message us on Facebook, Instagram, and Whatsapp. You would have to share your Name, Email, Mobile Number, and Address.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header" onclick="toggleFaq(1)">
+                Q: “Do you have Authentic products?”
+            </div>
+            <div class="faq-content">
+                <p>We guarantee 100% Authenticity of our products. Our products are sourced either from the principal companies or the authorized distributors/suppliers of the brands</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header" onclick="toggleFaq(2)">
+                Q: “Do I need to sign in to place an order?”
+            </div>
+            <div class="faq-content">
+                <p>You can create an account or order from Guest Checkout. We would however encourage you to create an account so that you can avail all the offers we have exclusively for our online audience.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header" onclick="toggleFaq(3)">
+                Q: “How do I confirm my COD order?”
+            </div>
+            <div class="faq-content">
+                <p>You can message us on Facebook, Instagram, or Whatsapp or call us at 0300-1234567 to confirm your order. Alternatively, you could wait for us to call you, we call thrice before cancelling a customer-placed order.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header" onclick="toggleFaq(4)">
+                Q: “How do I track my order?”
+            </div>
+            <div class="faq-content">
+                <p>Once a tracking number is tagged on your order, you will be notified via SMS and Email, after that you can track your order using our logistic partner's website.
+
+                 <br><br>   You can track your order through this link Track.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header" onclick="toggleFaq(5)">
+                Q: “Where is your store located?”
+            </div>
+            <div class="faq-content">
+                <p>Our store is located at Tariq Road PECHS Karachi, 75602, PAKISTAN.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header" onclick="toggleFaq(6)">
+                Q: “What payment options are available?“
+            </div>
+            <div class="faq-content">
+                <p>You can transfer money to us through Direct Deposit, we also have Credit Card, Debit Card available. And we also offer Cash on Delivery services (COD).</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header" onclick="toggleFaq(7)">
+                Q: “Where can I complain if I have an issue with my order?“
+            </div>
+            <div class="faq-content">
+                <p>You can message us on Facebook, Instagram, Whatsapp , or call us at 0300-1234567.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header" onclick="toggleFaq(8)">
+                Q: “What is your Exchange policy?“
+            </div>
+            <div class="faq-content">
+                <p>After the order has been delivered, the customer has the right to exchange the product within 3 days of receiving the product provided that it has not been used and the packaging has not been opened/damaged. He/She has to pay the shipping charges as well.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header" onclick="toggleFaq(9)">
+                Q: “What is your Return policy?”
+            </div>
+            <div class="faq-content">
+          <p>Products can be returned within 3 days of receiving, Provided it isn’t used.</p>
+            </div>
+        </div>
+    </div>
+<div class="buttonfaq">
+    Unable to find satisfactory answers ?
+   <button class="hero red-btn"><a href="./ContactUS.html"> Contact Support</a></button>
+</div>
+<!-- FAQs section end -->
+<!-- Footer start -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>123, Main Street, Your City, Country</p>
+            <p>Email: info@example.com</p>
+            <p>Phone: +1 234 567 8901</p>
+        </div>
+        <div class="footer-section">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="./AboutUs.html">About Us</a></li>
+                <li><a href="./FAQs.html">FAQs</a></li>
+                <li><a href="./ContactUS.html">Contact Us</a></li>
+                <li><a href="./Terms  Conditions.html">Terms & Conditions</a></li>
+                <li><a href="./Privacy Policy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="followus8/*">Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="#"><h5 class="socailmedia">Fcaebook</h5><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><h5 class="socailmedia">Instagram</h5><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><h5 class="socailmedia">Twitter</h5><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Feedback</h3>
+            <form class="feedback-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Comment" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div >
+        <h4 class="powered">Copyright © 2023 - Powered by Clarin's Costmetics</h4>
+     </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Footer END -->
+<!-- FAQs sections javascript -->
+    <script>
+        const faqs = document.getElementsByClassName('faq');
+
+        function toggleFaq(index) {
+            const faq = faqs[index];
+            faq.classList.toggle('active');
+        }
+    </script>
+    <!-- FAs section javascript end -->
+    <!-- Responsiveness Script -->
+    <script>
+        function myFunction() {
+            var x = document.querySelector("nav ul");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    
+
+</body>
+</html>
